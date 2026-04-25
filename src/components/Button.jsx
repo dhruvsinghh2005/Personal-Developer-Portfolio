@@ -18,6 +18,6 @@ export const Button = ({
       <span className="relative flex items-center justify-center gap-2">
         {children}
       </span>
-    </button>
+    </button> 
   );
 };

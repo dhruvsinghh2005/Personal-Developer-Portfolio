@@ -14,19 +14,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pedro@example.com",
-    href: "mailto:pedro@example.com",
+    value: "dhruvrsingh2005@gmail.com",
+    href: "mailto:dhruvrsingh2005@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+91 7379100904",
+    href: "tel:+917379100904",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Bhubaneswar, Odisha",
     href: "#",
   },
 ];
@@ -75,7 +75,7 @@ export const Contact = () => {
         message: "Message sent successfully! I'll get back to you soon.",
       });
       setFormData({ name: "", email: "", message: "" });
-    } catch (err) {
+    } catch (error) {
       console.error("EmailJS error:", error);
       setSubmitStatus({
         type: "error",
@@ -137,12 +137,13 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
                 </label>
                 <input
+                  id="email"
+                  type="email"
                   required
                   placeholder="your@email.com"
                   value={formData.email}

@@ -1,9 +1,8 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/dhruvsinghh2005", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/dhruv-raj-singh-358691364/", label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -23,10 +22,10 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              Dhruv Raj Singh<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Dhruv Raj Singh. All rights reserved.
             </p>
           </div>
 

@@ -3,26 +3,26 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Full-Stack Development",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building complete web applications using React, Node.js, and MongoDB.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Problem Solving",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Strong foundation in DSA and logical thinking to solve real-world problems.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: "Team Collaboration",
+    description: "Experience working on academic and project-based teams.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Continuous Learning",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Always exploring new technologies and improving development skills.",
   },
 ];
 
@@ -31,8 +31,10 @@ export const About = () => {
     <section id="about" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
           {/* Left Column */}
           <div className="space-y-8">
+            
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
                 About Me
@@ -40,44 +42,36 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Building impactful solutions,
               <span className="font-serif italic font-normal text-white">
-                {" "}
-                one component at a time.
+                {" "}one project at a time.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+              
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a passionate software developer and a 3rd-year BTech student with a strong interest in building real-world applications. I enjoy turning ideas into practical solutions through clean and efficient code.
               </p>
+
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I work primarily with React, Node.js, and MongoDB, developing full-stack applications such as event management systems and smart campus solutions. I focus on writing scalable backend systems and intuitive user interfaces.
               </p>
+
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Beyond coding, I actively explore new technologies, improve my problem-solving skills, and aim to build impactful projects that solve real-life problems.
               </p>
+
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "I aim to build efficient and user-friendly applications that solve real problems while continuously improving my skills as a developer."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div
@@ -95,6 +89,7 @@ export const About = () => {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

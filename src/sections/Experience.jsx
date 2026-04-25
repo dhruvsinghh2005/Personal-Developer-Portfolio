@@ -1,38 +1,11 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "May 2024 — June 2024",
+    role: "Summer Intern – Information Technology",
+    company: "Hindalco Industries Limited",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    current: true,
-  },
-  {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
-    description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
-    current: false,
-  },
-  {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
-    description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
-  },
-  {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Developed and deployed a full-stack industrial maintenance application using the MERN stack, enabling 50+ factory workers to create, track, and resolve 200+ maintenance tickets per month. Built dynamic React interfaces with form validation, integrated RESTful APIs for seamless data flow between frontend and MongoDB, and implemented role-based workflows for ticket management. Collaborated with the IT team following structured SDLC practices to ensure reliable and scalable delivery.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs","JWT"],
     current: false,
   },
 ];
@@ -52,7 +25,7 @@ export const Experience = () => {
             className="text-secondary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
           >
-            Career Journey
+            My Journey
           </span>
           <h2
             className="text-4xl md:text-5xl font-bold
@@ -62,7 +35,7 @@ export const Experience = () => {
             Experience that{" "}
             <span className="font-serif italic font-normal text-white">
               {" "}
-              speaks volumes.
+              keeps growing.
             </span>
           </h2>
 
@@ -70,8 +43,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            A timeline of my growth, from building projects to gaining
+            real-world experience in the industry.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+ import { Button } from "@/components/Button";
 import {
   ArrowRight,
   ChevronDown,
@@ -10,24 +10,15 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
+  "React.js",
+  "HTML",
+  "CSS",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
+  "Node.js",
+  "Express.js",
+  "REST APIs",
+  "MongoDB",
+  "MySQL"
 ];
 
 export const Hero = () => {
@@ -69,7 +60,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineer • MERN 
               </span>
             </div>
 
@@ -78,25 +69,30 @@ export const Hero = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
-                experiences with
+                backend systems with
                 <br />
                 <span className="font-serif italic font-normal text-white">
                   precision.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Dhruv Raj Singh — a MERN stack developer passionate about building scalable web applications and integrating AI/ML solutions. I develop efficient backend systems and dynamic user experiences that solve real-world problems. 
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Dhruv_Raj_Singh_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
@@ -106,9 +102,8 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com/dhruvsinghh2005" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/dhruv-raj-singh-358691364?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -133,7 +128,7 @@ export const Hero = () => {
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  alt="Dhruv Raj Singh"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
@@ -144,13 +139,6 @@ export const Hero = () => {
                     <span className="text-sm font-medium">
                       Available for work
                     </span>
-                  </div>
-                </div>
-                {/* Stats Badge */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Exp.
                   </div>
                 </div>
               </div>
